@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Sabit Uddin - Assignment 1</title>
+
+    <!--
+      SA: I Sabit Uddin, 400403866 certify that this material is my original work.
+      No other person's work has been used without due acknowledgement.
+      I have also not made my work available to anyone else.
+    -->
+
+    <!--
+      AI Usage in this script includes:
+      - Styling improvements for a more professional resume layout
+      - Adding a 2-column skillset section
+      - Refresher on using style for different classes
+      - Code cleanup to make it organized
+      - How to use <span>
+      - 
+    -->
+
+    <style>
+
+      body {
+        font-family: arial, sans-serif;
+        margin: 28px;
+        color: #111111;
+        background: #ffffff;
+        line-height: 1.5;
+      }
+
+      h1, h2 {
+        font-family: "times new roman", times, serif;
+        margin: 0;
+      }
+
+      .page {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #e6e6e6;
+      }
+
+      .header img {
+        width: 95px;
+        height: 95px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid #d0d0d0;
+      }
+
+      .name {
+        font-style: bold;
+        font-size: 2.1rem;
+        letter-spacing: 0.2px;
+      }
+
+      .contact {
+        margin-top: 6px;
+        font-size: 0.98rem;
+      }
+
+      .contact a {
+        color: #0b57d0;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      .section {
+        margin-top: 18px;
+      }
+
+      .section h2 {
+        font-size: 1.15rem;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 10px;
+      }
+
+      .summary {
+        margin-top: 14px;
+      }
+
+      .block {
+        margin-bottom: 12px;
+      }
+
+      .role-line {
+        margin: 0 0 6px 0;
+      }
+
+      .role-title {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .meta {
+        color: #333333;
+      }
+
+      ul {
+        margin: 6px 0 0 18px;
+        padding: 0;
+      }
+
+      li { margin: 4px 0; }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 28px;
+        margin-top: 8px;
+      }
+
+      .skills-grid ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      @media (max-width: 650px) {
+        .header { flex-direction: column; align-items: flex-start; }
+        .skills-grid { grid-template-columns: 1fr; }
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 22px;
+        padding-top: 10px;
+        border-top: 1px solid #e6e6e6;
+        color: #444444;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">
+        <img src="profilepic.jpg" alt="profile photo"/>
+        <div>
+          <h1 class="name">Sabit Uddin</h1>
+          <div class="contact">
+            Burlington, ON | 905-483-1640 |
+            <a href="mailto:uddins9@mcmaster.ca">uddins9@mcmaster.ca</a> |
+            <a href="https://www.linkedin.com/in/sabit-uddin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Summary</h2>
+        <p class="summary">
+          Automation Engineering co-op student at McMaster University seeking Summer 2026 opportunities in Tech &amp; Transformation Cyber Risk Advisory. 12 months of experience supporting digital, DevOps, and cybersecurity programs through issue tracking,
+          controls testing, data validation, and clear reporting across engineering, IT, and operations teams. Eager to leverage these skills in a 4-month co-op placement during Summer 2026.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Skillset</h2>
+
+        <div class="skills-grid">
+          <ul>
+            <li>Azure DevOps issue tracking &amp; governance</li>
+            <li>UAT + controls testing &amp; validation</li>
+            <li>Data validation &amp; structured reporting</li>
+            <li>Microsoft Excel, Word, PowerPoint, Project</li>
+            <li>Power BI / Power Automate (basic)</li>
+          </ul>
+
+          <ul>
+            <li>Python, C++, Java, HTML/CSS</li>
+            <li>MATLAB / Simulink</li>
+            <li>PLC / FPGA (VHDL) fundamentals</li>
+            <li>HMI / SCADA familiarity</li>
+            <li>CAD: SolidWorks, AutoCAD, Inventor</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+
+        <div class="block">
+          <p class="role-line">
+            <strong>High school:</strong>
+            Dr. Frank J Hayden Secondary School <span class="meta">| Graduated 2021</span>
+          </p>
+        </div>
+
+        <div class="block">
+          <p class="role-line">
+            <strong>University:</strong>
+            McMaster University, Hamilton, ON <span class="meta">| Expected 12/2026</span><br/>
+            <span class="meta">B.Eng. Automation Engineering (CO-OP) | Minor: Chemical Engineering - Process Automation | Certificate: Business and Management</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Experience</h2>
+
+        <div class="block">
+          <p class="role-line">
+            <span class="role-title">Project Management Administrator (ITA and Digital Projects)</span><br/>
+            <span class="meta">Stelco, Hamilton, ON | 05/2023 to 05/2024 | </span>
+            <a href="https://www.stelco.com/" target="_blank" rel="noopener noreferrer">Stelco Website</a>
+          </p>
+          <ul>
+            <li>Supported large-scale digital initiatives through project coordination, risk/issue tracking, and internal process reviews.</li>
+            <li>Managed 1500+ defects, risks, and controls in Azure DevOps to support stability, compliance, and auditability.</li>
+            <li>Executed UAT and controls testing to validate data accuracy, access controls, and process integrity prior to go-live.</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <p class="role-line">
+            <span class="role-title">Mechanical Subteam Member</span><br/>
+            <span class="meta">FIRST Robotics, Burlington, ON | 01/2018 to 04/2019 | </span>
+            <a href="https://firstroboticscanada.org/frc/" target="_blank" rel="noopener noreferrer">FRC Website</a>
+          </p>
+          <ul>
+            <li>Designed, assembled, and maintained mechanical subsystems (chassis, intake, shooter) for competition robotics.</li>
+            <li>Collaborated with electrical and programming subteams to ensure integration, performance, and build alignment.</li>
+            <li>Fabricated parts using hand tools and shop equipment, troubleshooting failures to meet competition deadlines.</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <p class="role-line">
+            <span class="role-title">Tutor</span><br/>
+            <span class="meta">Kumon, Burlington, ON | 01/2017 to 01/2019 | </span>
+            <a href="https://www.kumon.com/" target="_blank" rel="noopener noreferrer">Kumon Website</a>
+          </p>
+          <ul>
+            <li>Tutored Math and English for students in grades K–12, adapting explanations to different learning styles.</li>
+            <li>Built student independence by teaching problem-solving routines and consistent practice habits.</li>
+            <li>Tracked progress and created targeted study plans to improve performance and confidence.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Projects</h2>
+
+      <div class="block">
+        <p class="role-line">
+          <span class="role-title">Digital Risk & DevOps Controls Optimization</span><br/>
+          <span class="meta">Stelco ITA & Digital Transformation Initiative</span>
+        </p>
+      <ul>
+        <li>Improved tracking and governance of 1500+ defects, risks, and control issues within Azure DevOps.</li>
+        <li>Supported structured UAT testing and validation to reduce deployment risk.</li>
+        <li>Enhanced reporting workflows to improve cross-functional visibility.</li>
+      </ul>
+  </div>
+
+  <div class="block">
+    <p class="role-line">
+      <span class="role-title">FRC Competition Robot Development</span><br/>
+      <span class="meta">FIRST Robotics Competition</span>
+    </p>
+    <ul>
+      <li>Designed and fabricated mechanical subsystems including chassis, intake, and shooter mechanisms.</li>
+      <li>Integrated mechanical components with electrical and programming systems for competition readiness.</li>
+      <li>Performed iterative testing and mechanical troubleshooting under strict deadlines.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <p class="role-line">
+      <span class="role-title">Process Automation & Control Systems Labs</span><br/>
+      <span class="meta">McMaster University – Automation Engineering</span>
+    </p>
+    <ul>
+      <li>Developed MATLAB and Simulink models for system response and stability analysis.</li>
+      <li>Implemented PLC and FPGA-based control logic for simulated industrial processes.</li>
+      <li>Applied instrumentation and data acquisition techniques in lab-based automation experiments.</li>
+    </ul>
+  </div>
+</div>
+
+
+      <footer>
+        <p><i>Sabit Uddin - 2026</i></p>
+      </footer>
+    </div>
+  </body>
+</html>
